@@ -13,6 +13,8 @@ public class GhostMover : MonoBehaviour
     [SerializeField] private float obstacleAvoidanceForce = 2f;
     [SerializeField] private float respawnTime = 3f;
     [SerializeField] private float killDistance = 1f; // Distance at which the ghost can "kill" the player
+    [SerializeField] public float damage =10;
+
 
     private Renderer[] renderers;
     private Collider ghostCollider;
@@ -68,7 +70,6 @@ public class GhostMover : MonoBehaviour
 
     Vector3 ObstacleAvoidance()
     {
-        // ... (keep the existing ObstacleAvoidance code)
         return Vector3.zero; // Placeholder return
     }
 
@@ -94,9 +95,11 @@ public class GhostMover : MonoBehaviour
             if (distanceToPlayer <= killDistance)
             {
                 Debug.Log($"Ghost {gameObject.name} is within kill distance. Initiating death.");
+                if (other.CompareTag("Player"))
+                {
+                    other.GetComponent<PlayerHealth>().TakeDamage(damage);
+                }
                 DieAndRespawn();
-                // Placeholder: Player takes damage
-                // PlayerHealth.TakeDamage(10);
             }
             else
             {
