@@ -1,22 +1,44 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] private float maxHealth;
+    public Healthbar Healthbar;
 
     private float currentHealth;
-    public HealthBar HealthBar;
-private void Start(){
+    
+private void Start()
+    {
     currentHealth = maxHealth;
-    HealthBar.SetSliderMax(maxHealth);
+    Healthbar.SetSliderMax(maxHealth);
+    }
+
+    private void Update()
+    {
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
     }
 
     public void TakeDamage(float amount)
     {
         currentHealth -= amount;
-        HealthBar.SetSlider(currentHealth);
+        Healthbar.SetSlider(currentHealth);
+    }
+
+    private void Die()
+    {
+        Debug.Log("You died!");
+
+        //Play death animation
+
+        //Activate death screen
+
     }
 
 }
