@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{67BDAB51-D6BD-42EA-191C-99207E9C59ED}</ProjectGuid>
+    <ProjectGuid>{EFC86C1E-6291-7B8B-C80F-D453CF374802}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.ProBuilder.Examples.Editor</AssemblyName>

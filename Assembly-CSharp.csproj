@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4FB479F8-50E4-E295-7745-DD8867F45EEB}</ProjectGuid>
+    <ProjectGuid>{55B1F65B-D855-574A-011C-F66BB48BAC4E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -1055,11 +1055,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.ProBuilder.Examples.Editor.csproj">
-      <Project>{67BDAB51-D6BD-42EA-191C-99207E9C59ED}</Project>
+      <Project>{EFC86C1E-6291-7B8B-C80F-D453CF374802}</Project>
       <Name>Unity.ProBuilder.Examples.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Polyperfect.Universal.csproj">
-      <Project>{CF888838-1469-B32C-B39B-082DBC18F50C}</Project>
+      <Project>{5BC8A273-2B54-C045-D688-6674C6124FB9}</Project>
       <Name>Polyperfect.Universal</Name>
     </ProjectReference>
   </ItemGroup>
